@@ -23,7 +23,7 @@
     'name': 'Trasmit type translatable',
     'summary': 'Add translations to transmit methods',
     'category': 'Invoicing',
-    'version': '10.0.1.0.0',
+    'version': '1.0.0',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
