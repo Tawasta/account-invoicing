@@ -28,7 +28,7 @@
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': False,
+    'installable': True,
     'external_dependencies': {
         'python': [],
         'bin': [],
@@ -39,7 +39,7 @@
     'data': [
         'views/account_invoice.xml',
         'views/res_partner.xml',
-        'views/account_config_settings.xml',
+        #'views/account_config_settings.xml',
     ],
     'demo': [
     ],
