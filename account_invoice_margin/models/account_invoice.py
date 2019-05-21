@@ -9,8 +9,8 @@ class AccountInvoice(models.Model):
 
     margin = fields.Monetary(
         compute='_product_margin',
-        help=_('It gives profitability by calculating the difference between '
-               'the Unit Price and the cost.'),
+        help='It gives profitability by calculating the difference between '
+             'the Unit Price and the cost.',
         currency_field='currency_id',
         digits=dp.get_precision('Product Price'),
         store=True)
