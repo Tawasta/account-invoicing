@@ -22,13 +22,13 @@
 {
     'name': 'Invoice circulation - Mandatory analytic account',
     'summary': 'Analytic account info is required on invoice lines',
-    'version': '10.0.1.0.0',
+    'version': '1.0.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': True,
+    'installable': False,
     'external_dependencies': {
         'python': [],
         'bin': [],

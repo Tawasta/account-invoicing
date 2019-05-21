@@ -22,7 +22,7 @@
 {
     'name': 'Overdue Interest for Invoices',
     'summary': "Overdue interest % field for invoices and partners",
-    'version': '10.0.1.0.0',
+    'version': '12.0.1.0.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
@@ -39,7 +39,6 @@
     'data': [
         'views/account_invoice.xml',
         'views/res_partner.xml',
-        'views/account_config_settings.xml',
     ],
     'demo': [
     ],

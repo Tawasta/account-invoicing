@@ -22,13 +22,13 @@
 {
     'name': 'Sale Order Number in Invoice Comments',
     'summary': "Invoicing a SO stores the order # in invoice's comment field",
-    'version': '10.0.1.0.0',
+    'version': '1.0.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': True,
+    'installable': False,
     'external_dependencies': {
         'python': [],
         'bin': [],

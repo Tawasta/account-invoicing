@@ -22,13 +22,13 @@
 {
     'name': 'Account Invoice Merge - keep line order',
     'summary': 'Account Invoice Merge - keep line order',
-    'version': '10.0.1.0.1',
+    'version': '1.0.1',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': True,
+    'installable': False,
     'external_dependencies': {
         'python': [],
         'bin': [],

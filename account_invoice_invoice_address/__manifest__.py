@@ -22,13 +22,13 @@
 {
     'name': 'Separate Invoice Address for Invoices',
     'summary': 'Separates partner and invoice address fields',
-    'version': '10.0.1.2.0',
+    'version': '1.2.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': True,
+    'installable': False,
     'external_dependencies': {
         'python': [],
         'bin': [],

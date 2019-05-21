@@ -22,13 +22,13 @@
 {
     'name': 'Create Sale order from vendor invoice',
     'summary': 'Adds a wizard for creating a SO from vendor invoice',
-    'version': '10.0.1.3.0',
+    'version': '12.0.1.0.0',
     'category': 'Accounting',
     'website': 'https://tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
-    'installable': True,
+    'installable': False,
     'external_dependencies': {
         'python': [],
         'bin': [],
