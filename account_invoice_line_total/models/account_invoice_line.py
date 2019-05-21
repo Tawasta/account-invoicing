@@ -16,7 +16,7 @@ class AccountInvoiceLine(models.Model):
     def _compute_price_total(self):
         for record in self:
             currency = record.invoice_id and record.invoice_id.currency_id \
-                       or None
+                or None
             price = record.price_unit * (1 - (record.discount or 0.0) / 100.0)
             taxes = False
 

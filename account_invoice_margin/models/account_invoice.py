@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import api, fields, models, _
+from odoo import api, fields, models
 import odoo.addons.decimal_precision as dp
 
 
@@ -8,7 +8,7 @@ class AccountInvoice(models.Model):
     _inherit = "account.invoice"
 
     margin = fields.Monetary(
-        compute='_product_margin',
+        compute='_compute_product_margin',
         help='It gives profitability by calculating the difference between '
              'the Unit Price and the cost.',
         currency_field='currency_id',
@@ -16,7 +16,7 @@ class AccountInvoice(models.Model):
         store=True)
 
     @api.depends('invoice_line_ids.margin')
-    def _product_margin(self):
+    def _compute_product_margin(self):
         for invoice in self:
             margin = sum(invoice.invoice_line_ids.filtered(
                 lambda r: r.invoice_id.state != 'cancel').mapped('margin'))
