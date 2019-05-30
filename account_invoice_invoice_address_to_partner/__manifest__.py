@@ -20,8 +20,8 @@
 ##############################################################################
 
 {
-    'name': 'Force validated invoice address to customer address',
-    'summary': 'Change Invoicing address to Customer when confirming invoice',
+    'name': 'Force invoice address to customer address',
+    'summary': 'Automatically change Invoicing address to Customer address',
     'version': '10.0.1.0.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',

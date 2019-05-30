@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===================================================
-Force validated invoice address to customer address
-===================================================
+=========================================
+Force invoice address to customer address
+=========================================
 
-Auto-change Invoicing address to Customer when confirming invoice.
+Automatically change Invoicing address to Customer address
 
 Configuration
 =============
