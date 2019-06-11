@@ -16,7 +16,6 @@ class AccountInvoiceLine(models.Model):
 
     @api.model
     def create(self, vals):
-        
         res = super(AccountInvoiceLine, self).create(vals)
 
         res._member_line_partner_from_anaytic_account()
@@ -24,7 +23,7 @@ class AccountInvoiceLine(models.Model):
         return res
 
     def _member_line_partner_from_anaytic_account(self):
-        # Change the member line partner, if analytic account is set
+        """Change the member line partner, if analytic account is set."""
         member_line = self.env['membership.membership_line']
 
         for record in self:
