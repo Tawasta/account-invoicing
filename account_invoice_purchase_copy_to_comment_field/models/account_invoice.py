@@ -9,8 +9,6 @@ class AccountInvoice(models.Model):
     _inherit = 'account.invoice'
 
     origin = fields.Char(
-        string='Source Document',
-        help="Reference of the document that produced this invoice.",
         readonly=False
     )
 
