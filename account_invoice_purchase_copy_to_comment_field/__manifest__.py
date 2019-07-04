@@ -20,8 +20,9 @@
 ##############################################################################
 
 {
-    'name': 'Enable Source Document-field to be editable and copy to Comment-field',
-    'summary': 'Enable Source Document-field to be editable and copy to Comment-field',
+    'name': 'Copy Source Document-field to Comment-field',
+    'summary': """Enable Source Document-field to be editable and copy to
+                Comment-field""",
     'version': '10.0.1.0.0',
     'category': 'Invoicing & Payments',
     'website': 'https://tawasta.fi',
@@ -34,4 +35,3 @@
         'account_vendor_invoice_update_line_analytic_accounts',
     ],
 }
-
