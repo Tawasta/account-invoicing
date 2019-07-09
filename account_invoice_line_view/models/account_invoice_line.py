@@ -43,13 +43,13 @@ class AccountInvoiceLine(models.Model):
     # The states are hard coded, but they could be fetched from account invoice
     # model if that is necessary
     state = fields.Selection([
-            ('draft', 'Draft'),
-            ('proforma', 'Pro-forma'),
-            ('proforma2', 'Pro-forma'),
-            ('open', 'Open'),
-            ('paid', 'Paid'),
-            ('cancel', 'Cancelled'),
-        ],
+        ('draft', 'Draft'),
+        ('proforma', 'Pro-forma'),
+        ('proforma2', 'Pro-forma'),
+        ('open', 'Open'),
+        ('paid', 'Paid'),
+        ('cancel', 'Cancelled'),
+    ],
         string='State',
         related='invoice_id.state',
         store=True,
@@ -58,11 +58,11 @@ class AccountInvoiceLine(models.Model):
     # Invoice types are hard coded here, but it's very unlikely that they would
     # differ in any version or installation
     invoice_type = fields.Selection([
-            ('out_invoice', 'Customer Invoice'),
-            ('in_invoice', 'Vendor Bill'),
-            ('out_refund', 'Customer Refund'),
-            ('in_refund', 'Vendor Refund'),
-        ],
+        ('out_invoice', 'Customer Invoice'),
+        ('in_invoice', 'Vendor Bill'),
+        ('out_refund', 'Customer Refund'),
+        ('in_refund', 'Vendor Refund'),
+    ],
         string='Type',
         related='invoice_id.type',
         store=True,
