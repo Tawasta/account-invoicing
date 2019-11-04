@@ -17,9 +17,7 @@ class AccountInvoice(models.Model):
             description=description, journal_id=journal_id,
         )
 
-        if self.name and res.get('name'):
-            res['name'] = self.name
-        else:
-            res['name'] = ''
+        if res.get('name'):
+            res['name'] = self.name or ''
 
         return res
