@@ -26,8 +26,4 @@ class SaleOrder(models.Model):
             '%s%s' % (email_line, email) if email else ''
         )
 
-        # These values are used on account.invoice-model's onchange-method
-        vals['salesperson_phone'] = phone
-        vals['salesperson_email'] = email
-
         return vals
