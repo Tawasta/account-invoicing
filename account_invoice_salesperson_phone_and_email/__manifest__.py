@@ -19,8 +19,9 @@
 ##############################################################################
 
 {
-    'name': 'Account Invoice Salesperson Phonenumber and e-mail to note field',
-    'summary': """Account Invoice Salesperson Phonenumber and e-mail to
+    'name': """Account Invoice - Salesperson Phonenumber and e-mail to 
+        note field""",
+    'summary': """Account Invoice - Salesperson Phonenumber and e-mail to
         note field""",
     'version': '10.0.1.0.0',
     'category': 'Invoicing',
