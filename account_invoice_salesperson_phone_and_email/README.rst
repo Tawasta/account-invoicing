@@ -7,8 +7,8 @@ Account Invoice Salesperson Phone and Email to Invoice note
 ===========================================================
 
 If Salesperson has phonenumber and/or email-address, insert those to Invoice's
-note-field. This module also has onchange-method that preserves original comment
-and only adds new phone and email values.
+note-field. This module also has onchange-method for Salesperson that preserves
+original comment and only adds new phone and email values.
 
 Configuration
 =============
@@ -30,6 +30,7 @@ Credits
 Contributors
 ------------
 
+* Aleksi Savijoki <aleksi.savijoki@tawasta.fi>
 * Timo Kekäläinen <timo.kekalainen@tawasta.fi>
 
 Maintainer
