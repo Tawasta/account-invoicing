@@ -22,16 +22,19 @@ class AccountInvoice(models.Model):
                 '\n' + self.salesperson_email, '')
 
         if self._origin.user_id:
-            old_phone, old_email = (self._origin.user_id.partner_id.phone,
-                                    self._origin.user_id.partner_id.email)
+            old_phone, old_email = (self._origin.user_id.partner_id.phone or '',
+                                    self._origin.user_id.partner_id.email or '')
 
             self.comment = self._origin.comment.replace(
                 '\n' + old_phone, '').replace('\n' + old_email, '')
 
+        email_line = '\n' if self.comment or phone else ''
+        phone_line = '\n' if self.comment else ''
+
         if phone:
-            self.comment += '\n{}'.format(phone)
+            self.comment += '{}{}'.format(phone_line, phone)
         if email:
-            self.comment += '\n{}'.format(email)
+            self.comment += '{}{}'.format(email_line, email)
 
         self.salesperson_phone = self.user_id.phone
         self.salesperson_email = self.user_id.email
