@@ -19,14 +19,14 @@
 ##############################################################################
 
 {
-    'name': """Account Invoice - Salesperson Phonenumber and e-mail to 
+    'name': """Account Invoice - Salesperson Phonenumber and e-mail to
         note field""",
     'summary': """Account Invoice - Salesperson Phonenumber and e-mail to
         note field""",
-    'version': '10.0.1.0.0',
+    'version': '12.0.1.0.0',
     'category': 'Invoicing',
     'website': 'https://tawasta.fi',
-    'author': 'Oy Tawasta OS Technologies Ltd.',
+    'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
     'application': False,
     'installable': True,
