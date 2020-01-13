@@ -13,13 +13,8 @@ class AccountInvoice(models.Model):
 
         if self.salesperson_email:
             self.comment = self.comment.replace(
-                '\n' + _("Handler: ") + self.salesperson_email, '')
-            self.comment = self.comment.replace(
-                 _("Handler: ") + self.salesperson_email, '')
-
-        if self._origin.user_id:
-            old_email = self._origin.user_id.partner_id.email or ''
-            self._origin.comment = self._origin.comment.replace('\n' + _("Handler: ") + old_email, '')
+                '\n' + _("Handler: ") + self.salesperson_email, '').replace(
+                _("Handler: ") + self.salesperson_email, '')
 
         email_line = '\n' if self.comment else ''
 
