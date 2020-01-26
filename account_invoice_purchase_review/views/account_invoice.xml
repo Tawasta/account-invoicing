@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="invoice_supplier_form" model="ir.ui.view">
+        <field name="name">account.invoice.supplier.form.review</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+
+            <field name="invoice_line_ids" position="before">
+                <label for="purchase_order_ids"/>
+                <field name="purchase_order_ids" widget="many2many_tags"/>
+            </field>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='name']" position="after">
+                <field name="purchase_line_name" />
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_unit']" position="after">
+                <field name="purchase_line_price_unit" />
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='quantity']" position="after">
+                <field name="purchase_line_quantity" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
