@@ -28,6 +28,6 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account"],
+    "depends": ["account_invoice_customer"],
     "data": ["views/account_invoice.xml"],
 }
