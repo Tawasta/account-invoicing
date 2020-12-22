@@ -16,7 +16,7 @@
 
         <xpath expr="//td[@class='text-right o_price_total']//span[1]"
             position="replace">
-            <t t-esc="line.price_subtotal_signed" groups="account.group_show_line_subtotals_tax_excluded" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+            <span t-esc="line.price_subtotal_signed" groups="account.group_show_line_subtotals_tax_excluded" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
         </xpath>
 
         <xpath expr="//span[@t-esc='current_subtotal']"
